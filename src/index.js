@@ -9,15 +9,9 @@ const DATA = [
   { id: "todo-2", name: "Repeat", completed: false }
 ];
 
-const BUTTONS = [
-  { id: 0, buttonStatus: "All", pressed: true },
-  { id: 1, buttonStatus: "Active", pressed: false },
-  { id: 2, buttonStatus: "Completed", pressed: false }
-];
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App tasks={DATA} buttons={BUTTONS} />
+    <App tasks={DATA} />
   </React.StrictMode>
 );
